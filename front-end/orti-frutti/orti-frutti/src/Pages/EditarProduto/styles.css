@@ -1,0 +1,28 @@
+.product__edit {
+    display: flex;
+    flex-direction: column;
+    border: 6px solid #05b35388;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 50%;
+    gap: 8px;
+}
+
+.product__campo {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    padding-top: 10px;
+}
+
+.product__label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.edit--btn{
+    justify-content: center;
+    justify-items: center;
+    margin: 10px auto 0;
+    width: 30%;
+}

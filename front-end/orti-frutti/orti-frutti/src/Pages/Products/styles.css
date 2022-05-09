@@ -1,0 +1,11 @@
+.product__container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 16px;
+}
+
+.product__card__container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
