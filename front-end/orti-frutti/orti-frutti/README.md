@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+Projeto API - Lista de Compras
+Descrição
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto final de curso do 1° Programa <vem.ser=DEV>, uma parceria entre o grupo DPSP e a Liga Digital. 
 
-## Available Scripts
+**Objetivo
 
-In the project directory, you can run:
+Programar uma aplicação web, desenvolvendo uma API de Lista de Compras em que o usuário interaja com o Front-end fornecendo informações dos produtos e, o Back-end armazene as informações em um banco de dados.
 
-### `npm start`
+Requisitos do projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    Desenvolver uma aplicação Front-end com ReacJS de acordo com as aulas do curso;
+    Desenvolver uma API com CRUD (Create, Update, Delete) utilizando NestJS seguindo as Instruções do artigo https://www.sidechannel.blog/criando-uma-api-com-nestjs/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+**Ferramentas e tecnologias utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    Front-end: JavaScript, ReactJS, React_Router_Dom, Ant Design e Axios;
+    Back-end: NodeJS, ExpressJS e NestJS;
+    Programas: Visual Studio Code, Postman, DBeaver e Insomnia;
+    Banco de dados: Heroku (PostgreSQL).
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**-- Front-end --
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+***Instalando npm
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+$ npm install 
 
-### `npm run eject`
+***Criando projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+$ npm create react-app nome_do_projeto
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+***Instalando Ant Design
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+$ cd nome_do_projeto
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+$ npm add antd
 
-## Learn More
+***Instalando Axios
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+$ cd nome_do_projeto
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+$ npm add axios
 
-### Code Splitting
+***Instalando gerenciador de transição de páginas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+$ cd nome_do_projeto
 
-### Analyzing the Bundle Size
+$ npm add react-router-dom
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+***Executando o projeto no Front-end
 
-### Making a Progressive Web App
+$ cd nome_do_projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+$ npm start
 
-### Advanced Configuration
+**-- Back-end --
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+***Instalando NodeJS e NPM
 
-### Deployment
+Os arquivos podem ser baixados no site Node de acordo com o sistema operacional.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+***Instalando o NestJS
 
-### `npm run build` fails to minify
+As instruções detalhadas da instalação do Nest encontram-se no conteúdo criado pelo Prof Alex Carneiro.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+***Executando o projeto no Back-end
+
+$ cd nome_do_projeto
+
+em modo desenvolvedor
+
+$ npm run start:dev
+
+ou
+
+$ npm run start
+
+----------------------------------------------------------------
+
+Para mais informações, entre em contato pelo seguinte e-mail: edna.nojima1977@gmail.com
+
+**Autoria
+
+    Aluna: Edna Alves Nojima;
+    Prof. Tiago dos Santos (Back-end e Banco de Dados);
+    Prof. Alex Carneiro (Back-end);
+    Prof. Leonardo Gomes (Front-end).
+
+**Projeto entregue em 10/05/2022.
