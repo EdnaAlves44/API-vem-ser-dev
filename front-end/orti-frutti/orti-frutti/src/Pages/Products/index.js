@@ -28,11 +28,17 @@ export default function Products(){
 
             <div className="product__card__container">
                 {products.map(product => (
-                    <Card key={product.id} title={product.name} bordered={false} style={{width: 300}}>
-                        <p>Descrição:{product.description}</p>
-                        <p>Quantidade:{product.quantity}</p>
-                        <Button onClick={() => history.push(`/details/${product.id}`) }>Detalhes</Button>
-                        </Card>
+                    <Card key={product.id} title={product.name} bordered={false} style={{width: 300}} className= 'card'>
+                        <p>
+                            Descrição:{product.description}
+                        </p>
+                        <p>
+                            Quantidade:{product.quantity}
+                        </p>
+                        <div>
+                            <Button onClick={() => history.push(`/details/${product.id}`) }>Detalhes</Button>
+                        </div>
+                    </Card>
                 ))}
             </div>
         </div>

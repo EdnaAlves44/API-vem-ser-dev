@@ -6,22 +6,24 @@ import { useHistory } from 'react-router-dom'
 
 import { message, Form, Input, Button, InputNumber } from 'antd'
 
+
 export default function AddProduct(){
 
-    const [disabled, setDisabled] = useState(false)
-    const history = useHistory()
+    
+const history = useHistory()
+const [disabled, setDisabled ] = useState(false);
 
     async function handleSubmit(product){
-        setDisabled(true)
+        setDisabled(true);
         api.post('/item', product)
             .then((response) => {
-                if(response.status ===201){
-                    message.success('Produto adicionado com sucesso!');
+                if(response.status === 201){
+                    message.success('Produto adicionado com sucesso!', 5, true);
                     history.push('/products')
                 }
             })
             .catch((err) =>{
-                message.error("Aconteceu um erro ao adicionar o produto " + err.response.data.message)
+                message.warning("Aconteceu um erro ao adicionar o produto " + err.response.data.message);
             })
     }
     return(
@@ -31,8 +33,8 @@ export default function AddProduct(){
             <div>
                 <Form
                 name='submitProduct'
-                labelCol={{span:8}}
-                wrapperCol={{span:16}}
+                labelCol={{ span:8 }}
+                wrapperCol={{ span:16 }}
                 onFinish={handleSubmit}
                 autoComplete="off"
                 >
@@ -60,8 +62,8 @@ export default function AddProduct(){
                         <InputNumber />
                     </Form.Item>
 
-                    <Form.Item>
-                        <Button type='primary' htmlType='submit' disabled={disabled}>
+                    <Form.Item>   
+                        <Button type='primary' htmlType='submit' disabled={disabled}    >
                             Adicionar
                         </Button>
                     </Form.Item>

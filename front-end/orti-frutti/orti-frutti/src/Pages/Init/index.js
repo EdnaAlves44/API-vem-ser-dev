@@ -13,13 +13,16 @@ export default function Init(){
         event.preventDefault();
         history.push('/products');
     }
-    return(
 
+    return(
         <div className='init__container'>
             <section>
+            <br/>
+                <Button className='center' onClick={listarProdutos}>Ver produtos</Button>
+                <br/>
                 <img src={Logo} alt='logo' className='center' />
                 <br/>
-                <Button className='center' onClick={listarProdutos}>Ver produtos</Button>
+                <br/>
             </section>
         </div>
     )
