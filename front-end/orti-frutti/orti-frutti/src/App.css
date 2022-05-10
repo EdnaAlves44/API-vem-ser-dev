@@ -10,24 +10,24 @@
 }
 
 .header {
-  background-color: rgb(252, 141, 15);
+  background-color: rgb(5, 194, 84);
   font-size: 16px;
   font-weight: 700;
 }
 
 .menu {
-  background-color: rgb(5, 194, 84); 
+  background-color: rgb(27, 116, 67); 
   padding: 16px;
 }
 
 .footer {
-  background-color: aliceblue;
+  background-color: rgb(143, 252, 179);
   text-align: center;
   font-weight: 600;
 }
 
 .menu__section {
-  background-color: rgb(5, 194, 84);
+  background-color: rgb(27, 116, 67);
 }
 
 

@@ -63,7 +63,7 @@ export default function ProductDetails(){
                     <p>Quantidade: {product.quantity}</p>
                     <hr/>
                     <div className='product__card--actions'>
-                        <Button type='primary' sucess icon={<EditOutlined />} onClick={() => history.push(`/editar/${product.id}`, product)}>Editar</Button>
+                        <Button type='primary' sucess icon={<EditOutlined />} onClick={() => history.push(`/edit/${product.id}`, product)}>Edit</Button>
                         <Button type="primary" danger onClick={()=> showConfirm(product)}>Excluir</Button>
                     </div>
                 </Card>
