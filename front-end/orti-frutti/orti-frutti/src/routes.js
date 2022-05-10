@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Products from './Pages/Products'    // ../src/Pages/Products'//
 import Init from './Pages/Init'
 import AddProduct from "./Pages/AddProduct";
@@ -9,7 +9,6 @@ import EditarProduto from './Pages/EditarProduto'
 export default function Routes(){
     return(
 
-        <BrowserRouter>
             <Switch>
                 <Route path='/' exact component={Init}/>
                 <Route path='/products' component={Products}/>
@@ -17,7 +16,6 @@ export default function Routes(){
                 <Route path='/details/:id' component={ProductDetails}/>
                 <Route path='/edit/:id' component={EditarProduto}/>
             </Switch>
-        </BrowserRouter>
     )
 }
 
